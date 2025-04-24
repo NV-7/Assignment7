@@ -1,0 +1,15 @@
+I 2
+A 5
+E 4
+F 2
+T 2
+S 3
+
+Generated from line 34 in class Draw Graph
+  I A E F T S
+I 0 0 1 0 0 0
+A 1 0 0 0 0 0
+E 1 0 0 0 0 0
+F 0 0 0 0 0 1
+T 1 0 0 0 0 0
+S 0 0 1 0 0 0
