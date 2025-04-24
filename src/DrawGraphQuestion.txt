@@ -1,0 +1,34 @@
+(code) Draw Graph [30 points] Write a program that takes as input an array of size n and creates an
+image of the directed graph defined by that array, as explained below.
+Each vertex is defined by a letter (name of the vertex) and an integer x which determines that exists one
+edge between that vertex and the vertex that is x positions to its right and the vertex that is x positions
+to its left in the initial array, the array is considered circular.
+Exception: You may do this one problem in any programming language of your choice.
+Partial credit: If your output is a textual representation of the adjacency matrix representation of the
+graph you get 20 points.
+
+    Input Format
+    A string s will contain a sequence of vertices-number pairs using parenthesis and brackets for
+    formatting. It can be empty.
+
+    Constraints
+    • 𝑛 ≥ 0 where n is the number of input pairs
+    • A pair will have the form (v, x)
+    • V is guaranteed to be different for all pairs
+    • 𝑥! ≥ 1 ∀ 𝑖 ≤ 𝑛 where xi indicates a link to the vertex x positions to the right and the vertex x
+    positions to the left.
+    • If 𝑥! > n then you must use the module operator to determine the position of the connected vertex
+
+    Output
+    An image of the graph
+    Sample Input
+    [ (I, 2) , (A, 5) , (E, 4) , (F,2) , (T, 2) , (S, 3) ]
+    Sample Output
+    Notice that every node except S has exactly two outgoing edges. That is because, E is the node 3 positions
+    to the right of S in the input and also the node 3 positions to the left of S in the input.
+    Your output graph may look different from mine, but the vertices and edges should be the same.
+
+
+Hint: In Java you can use the graphstream library
+see https://graphstream-project.org/doc/Tutorials/Getting-Started/
+EC(+5): If you complete this one in Java
